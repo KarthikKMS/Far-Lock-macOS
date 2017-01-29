@@ -25,11 +25,11 @@ class ContainerViewController: NSViewController {
         self.addChildViewController(searchingViewController)
         self.view.addSubview(searchingViewController.view)
         
-        //
+        // delete start
         let phoneFoundViewController = PhoneFoundViewController()
         phoneFoundViewController.delegate = self
         switchChildViewController(to: phoneFoundViewController)
-        //
+        // delete end
     }
     
     

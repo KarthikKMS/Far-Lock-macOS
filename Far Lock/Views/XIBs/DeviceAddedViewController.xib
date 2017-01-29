@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DeviceAddedViewController" customModule="Far_Lock" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-jH-BRM">
+                    <rect key="frame" x="420" y="256" width="224" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="lEo-zx-pNf"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="We are done!" id="Zwc-DW-ZqS">
+                        <font key="font" metaFont="systemThin" size="39"/>
+                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jCZ-1V-nU0">
+                    <rect key="frame" x="420" y="203" width="224" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Oab-uE-EJS"/>
+                    </constraints>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Far Lock will be available in the menu bar" id="aEA-hH-L4V">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jCZ-1V-nU0" firstAttribute="width" secondItem="l9i-jH-BRM" secondAttribute="width" id="GIP-ZD-aSY"/>
+                <constraint firstItem="l9i-jH-BRM" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="87" id="Qqm-Hj-r5G"/>
+                <constraint firstItem="jCZ-1V-nU0" firstAttribute="centerX" secondItem="l9i-jH-BRM" secondAttribute="centerX" id="XqF-Uk-Lgp"/>
+                <constraint firstItem="jCZ-1V-nU0" firstAttribute="top" secondItem="l9i-jH-BRM" secondAttribute="bottom" constant="19" id="hr3-4o-jud"/>
+                <constraint firstAttribute="trailing" secondItem="l9i-jH-BRM" secondAttribute="trailing" constant="58" id="qHu-o5-t8I"/>
+            </constraints>
+            <point key="canvasLocation" x="-130" y="164"/>
+        </customView>
+    </objects>
+</document>

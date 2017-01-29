@@ -17,6 +17,8 @@
 		D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977301E3DB8FC00F608DF /* ContainerViewController.swift */; };
 		D96977341E3DB90900F608DF /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977321E3DB90900F608DF /* SearchingViewController.swift */; };
 		D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96977361E3DB91600F608DF /* SearchingViewController.xib */; };
+		D969773A1E3E158E00F608DF /* PhoneFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */; };
+		D969773D1E3E15A200F608DF /* PhoneFoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D96977301E3DB8FC00F608DF /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		D96977321E3DB90900F608DF /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 		D96977361E3DB91600F608DF /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
+		D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFoundViewController.swift; sourceTree = "<group>"; };
+		D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneFoundViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				D96977361E3DB91600F608DF /* SearchingViewController.xib */,
+				D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				D969772D1E3DB88A00F608DF /* ViewController.swift */,
 				D96977301E3DB8FC00F608DF /* ContainerViewController.swift */,
 				D96977321E3DB90900F608DF /* SearchingViewController.swift */,
+				D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				D969772B1E3DB87100F608DF /* Main.storyboard in Resources */,
 				D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */,
 				D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */,
+				D969773D1E3E15A200F608DF /* PhoneFoundViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +328,7 @@
 			files = (
 				D96977341E3DB90900F608DF /* SearchingViewController.swift in Sources */,
 				D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */,
+				D969773A1E3E158E00F608DF /* PhoneFoundViewController.swift in Sources */,
 				D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */,
 				D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */,
 				D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */,
@@ -558,6 +566,7 @@
 				D969771C1E3DB72A00F608DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D969771D1E3DB72A00F608DF /* Build configuration list for PBXNativeTarget "Far LockTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +575,7 @@
 				D969771F1E3DB72A00F608DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96977201E3DB72A00F608DF /* Build configuration list for PBXNativeTarget "Far LockUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +584,7 @@
 				D96977221E3DB72A00F608DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

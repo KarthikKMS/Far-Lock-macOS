@@ -10,15 +10,18 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var containerView: NSView!
+    var containerViewController: ContainerViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EmbedSegue" {
+            containerViewController = segue.destinationController as? ContainerViewController
         }
     }
 

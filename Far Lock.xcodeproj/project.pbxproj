@@ -14,6 +14,9 @@
 		D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D96977241E3DB84600F608DF /* Far_Lock.xcdatamodeld */; };
 		D969772B1E3DB87100F608DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96977291E3DB87100F608DF /* Main.storyboard */; };
 		D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969772D1E3DB88A00F608DF /* ViewController.swift */; };
+		D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977301E3DB8FC00F608DF /* ContainerViewController.swift */; };
+		D96977341E3DB90900F608DF /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977321E3DB90900F608DF /* SearchingViewController.swift */; };
+		D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96977361E3DB91600F608DF /* SearchingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D96977251E3DB84600F608DF /* Far_Lock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Far_Lock.xcdatamodel; sourceTree = "<group>"; };
 		D96977291E3DB87100F608DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D969772D1E3DB88A00F608DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D96977301E3DB8FC00F608DF /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		D96977321E3DB90900F608DF /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
+		D96977361E3DB91600F608DF /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		D969772A1E3DB87100F608DF /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				D96977361E3DB91600F608DF /* SearchingViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -162,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				D969772D1E3DB88A00F608DF /* ViewController.swift */,
+				D96977301E3DB8FC00F608DF /* ContainerViewController.swift */,
+				D96977321E3DB90900F608DF /* SearchingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +294,7 @@
 			files = (
 				D969772B1E3DB87100F608DF /* Main.storyboard in Resources */,
 				D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */,
+				D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D96977341E3DB90900F608DF /* SearchingViewController.swift in Sources */,
 				D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */,
 				D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */,
+				D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */,
 				D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,8 @@
 		D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96977361E3DB91600F608DF /* SearchingViewController.xib */; };
 		D969773A1E3E158E00F608DF /* PhoneFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */; };
 		D969773D1E3E15A200F608DF /* PhoneFoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */; };
+		D96977401E3E20B600F608DF /* EnterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969773E1E3E20B600F608DF /* EnterPasswordViewController.swift */; };
+		D96977431E3E20C000F608DF /* EnterPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96977421E3E20C000F608DF /* EnterPasswordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		D96977361E3DB91600F608DF /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
 		D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFoundViewController.swift; sourceTree = "<group>"; };
 		D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneFoundViewController.xib; sourceTree = "<group>"; };
+		D969773E1E3E20B600F608DF /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
+		D96977421E3E20C000F608DF /* EnterPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterPasswordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 			children = (
 				D96977361E3DB91600F608DF /* SearchingViewController.xib */,
 				D969773C1E3E15A200F608DF /* PhoneFoundViewController.xib */,
+				D96977421E3E20C000F608DF /* EnterPasswordViewController.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				D96977301E3DB8FC00F608DF /* ContainerViewController.swift */,
 				D96977321E3DB90900F608DF /* SearchingViewController.swift */,
 				D96977381E3E158E00F608DF /* PhoneFoundViewController.swift */,
+				D969773E1E3E20B600F608DF /* EnterPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D969772B1E3DB87100F608DF /* Main.storyboard in Resources */,
+				D96977431E3E20C000F608DF /* EnterPasswordViewController.xib in Resources */,
 				D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */,
 				D96977371E3DB91600F608DF /* SearchingViewController.xib in Resources */,
 				D969773D1E3E15A200F608DF /* PhoneFoundViewController.xib in Resources */,
@@ -332,6 +339,7 @@
 				D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */,
 				D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */,
 				D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */,
+				D96977401E3E20B600F608DF /* EnterPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

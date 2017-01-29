@@ -10,8 +10,17 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var containerView: NSView!
+    
+    
+    // MARK: - Global Constants and Variables
+    
     var containerViewController: ContainerViewController?
+    
+    
+    // MARK: - NSViewController Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()

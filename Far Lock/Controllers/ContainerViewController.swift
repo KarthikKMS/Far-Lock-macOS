@@ -50,10 +50,21 @@ class ContainerViewController: NSViewController {
 
 extension ContainerViewController: PhoneFoundViewControllerDelegate {
     func acceptButtonPressed() {
-        
+        let enterPasswordViewController = EnterPasswordViewController()
+        enterPasswordViewController.delegate = self
+        switchChildViewController(to: enterPasswordViewController)
     }
     
     func denyButtonPressed() {
+        switchChildViewController(to: searchingViewController)
+    }
+}
+
+
+// MARK: - EnterPasswordViewControllerDelegate Methods
+
+extension ContainerViewController: EnterPasswordViewControllerDelegate {
+    func cancelButtonPressed() {
         switchChildViewController(to: searchingViewController)
     }
 }

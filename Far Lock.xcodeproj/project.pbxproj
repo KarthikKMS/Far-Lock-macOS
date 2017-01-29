@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96976F51E3DB72A00F608DF /* AppDelegate.swift */; };
-		D96976F81E3DB72A00F608DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96976F71E3DB72A00F608DF /* ViewController.swift */; };
-		D96976FB1E3DB72A00F608DF /* Far_Lock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D96976F91E3DB72A00F608DF /* Far_Lock.xcdatamodeld */; };
 		D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96976FC1E3DB72A00F608DF /* Assets.xcassets */; };
-		D96977001E3DB72A00F608DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96976FE1E3DB72A00F608DF /* Main.storyboard */; };
 		D969770B1E3DB72A00F608DF /* Far_LockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969770A1E3DB72A00F608DF /* Far_LockTests.swift */; };
 		D96977161E3DB72A00F608DF /* Far_LockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96977151E3DB72A00F608DF /* Far_LockUITests.swift */; };
+		D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D96977241E3DB84600F608DF /* Far_Lock.xcdatamodeld */; };
+		D969772B1E3DB87100F608DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96977291E3DB87100F608DF /* Main.storyboard */; };
+		D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969772D1E3DB88A00F608DF /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,7 @@
 /* Begin PBXFileReference section */
 		D96976F21E3DB72A00F608DF /* Far Lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Far Lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96976F51E3DB72A00F608DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D96976F71E3DB72A00F608DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D96976FA1E3DB72A00F608DF /* Far_Lock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Far_Lock.xcdatamodel; sourceTree = "<group>"; };
 		D96976FC1E3DB72A00F608DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D96976FF1E3DB72A00F608DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D96977011E3DB72A00F608DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96977061E3DB72A00F608DF /* Far LockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Far LockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969770A1E3DB72A00F608DF /* Far_LockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Far_LockTests.swift; sourceTree = "<group>"; };
@@ -47,6 +44,9 @@
 		D96977111E3DB72A00F608DF /* Far LockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Far LockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96977151E3DB72A00F608DF /* Far_LockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Far_LockUITests.swift; sourceTree = "<group>"; };
 		D96977171E3DB72A00F608DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96977251E3DB84600F608DF /* Far_Lock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Far_Lock.xcdatamodel; sourceTree = "<group>"; };
+		D96977291E3DB87100F608DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D969772D1E3DB88A00F608DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				D96976F51E3DB72A00F608DF /* AppDelegate.swift */,
-				D96976F71E3DB72A00F608DF /* ViewController.swift */,
+				D96977231E3DB84600F608DF /* Models */,
+				D96977271E3DB87100F608DF /* Views */,
+				D969772C1E3DB88A00F608DF /* Controllers */,
+				D969772F1E3DB89A00F608DF /* Utilities */,
 				D96976FC1E3DB72A00F608DF /* Assets.xcassets */,
-				D96976FE1E3DB72A00F608DF /* Main.storyboard */,
 				D96977011E3DB72A00F608DF /* Info.plist */,
-				D96976F91E3DB72A00F608DF /* Far_Lock.xcdatamodeld */,
 			);
 			path = "Far Lock";
 			sourceTree = "<group>";
@@ -123,6 +124,53 @@
 				D96977171E3DB72A00F608DF /* Info.plist */,
 			);
 			path = "Far LockUITests";
+			sourceTree = "<group>";
+		};
+		D96977231E3DB84600F608DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D96977241E3DB84600F608DF /* Far_Lock.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D96977271E3DB87100F608DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D96977281E3DB87100F608DF /* Storyboards */,
+				D969772A1E3DB87100F608DF /* XIBs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D96977281E3DB87100F608DF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D96977291E3DB87100F608DF /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D969772A1E3DB87100F608DF /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		D969772C1E3DB88A00F608DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D969772D1E3DB88A00F608DF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D969772F1E3DB89A00F608DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D969772B1E3DB87100F608DF /* Main.storyboard in Resources */,
 				D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */,
-				D96977001E3DB72A00F608DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96976FB1E3DB72A00F608DF /* Far_Lock.xcdatamodeld in Sources */,
-				D96976F81E3DB72A00F608DF /* ViewController.swift in Sources */,
+				D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */,
+				D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */,
 				D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,17 +345,6 @@
 			targetProxy = D96977121E3DB72A00F608DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D96976FE1E3DB72A00F608DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D96976FF1E3DB72A00F608DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D96977181E3DB72A00F608DF /* Debug */ = {
@@ -529,12 +566,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D96976F91E3DB72A00F608DF /* Far_Lock.xcdatamodeld */ = {
+		D96977241E3DB84600F608DF /* Far_Lock.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D96976FA1E3DB72A00F608DF /* Far_Lock.xcdatamodel */,
+				D96977251E3DB84600F608DF /* Far_Lock.xcdatamodel */,
 			);
-			currentVersion = D96976FA1E3DB72A00F608DF /* Far_Lock.xcdatamodel */;
+			currentVersion = D96977251E3DB84600F608DF /* Far_Lock.xcdatamodel */;
 			path = Far_Lock.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

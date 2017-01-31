@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D967B7011E3F8F9200CFF27C /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D967B7001E3F8F9200CFF27C /* BeaconManager.m */; };
 		D96976F61E3DB72A00F608DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96976F51E3DB72A00F608DF /* AppDelegate.swift */; };
 		D96976FD1E3DB72A00F608DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96976FC1E3DB72A00F608DF /* Assets.xcassets */; };
 		D969770B1E3DB72A00F608DF /* Far_LockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969770A1E3DB72A00F608DF /* Far_LockTests.swift */; };
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D967B6FE1E3F8F9200CFF27C /* Far Lock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Far Lock-Bridging-Header.h"; sourceTree = "<group>"; };
+		D967B6FF1E3F8F9200CFF27C /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		D967B7001E3F8F9200CFF27C /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 		D96976F21E3DB72A00F608DF /* Far Lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Far Lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96976F51E3DB72A00F608DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96976FC1E3DB72A00F608DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,6 +200,9 @@
 		D969772F1E3DB89A00F608DF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D967B6FF1E3F8F9200CFF27C /* BeaconManager.h */,
+				D967B7001E3F8F9200CFF27C /* BeaconManager.m */,
+				D967B6FE1E3F8F9200CFF27C /* Far Lock-Bridging-Header.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 					D96976F11E3DB72A00F608DF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = TZ824L8Y37;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D96977051E3DB72A00F608DF = {
@@ -343,6 +351,7 @@
 				D96977341E3DB90900F608DF /* SearchingViewController.swift in Sources */,
 				D969772E1E3DB88A00F608DF /* ViewController.swift in Sources */,
 				D969773A1E3E158E00F608DF /* PhoneFoundViewController.swift in Sources */,
+				D967B7011E3F8F9200CFF27C /* BeaconManager.m in Sources */,
 				D96977461E3E256400F608DF /* DeviceAddedViewController.swift in Sources */,
 				D96977261E3DB84600F608DF /* Far_Lock.xcdatamodeld in Sources */,
 				D96977311E3DB8FC00F608DF /* ContainerViewController.swift in Sources */,
@@ -477,12 +486,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZ824L8Y37;
 				INFOPLIST_FILE = "Far Lock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KMS.Far-Lock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Far Lock/Utilities/Far Lock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -491,12 +503,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TZ824L8Y37;
 				INFOPLIST_FILE = "Far Lock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KMS.Far-Lock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Far Lock/Utilities/Far Lock-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

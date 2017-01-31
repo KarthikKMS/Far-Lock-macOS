@@ -11,14 +11,17 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    let uuidString = "0B0CBAF8-846D-4397-A1EE-D5FE9FFDDF6F"
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
+        BeaconManager.initBeaconManager(with: NSUUID(uuidString: uuidString) as UUID!, major: 5, minor: 2)
+        BeaconManager.startAdvertisingBeacon()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        
+        BeaconManager.stopAdvertisingBeacon()
     }
 
     // MARK: - Core Data stack
